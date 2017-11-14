@@ -1,6 +1,6 @@
 \documentclass[]{comunicaciones}
 \labelpaper[year =2014 , month =12, volume =7, number =2 , firstpage =115 ]
-%Cargar los paquetes necesarios aquí
+%Cargar los paquetes necesarios aqu?
 \usepackage{enumitem}  % format a list as to remove the spaces between list items
 \usepackage[usenames,dvipsnames,svgnames,table]{xcolor} % para usar colores
 
@@ -10,13 +10,13 @@
 \let\code=\texttt
 
 \begin{document}
-\title[maintitle = Aplicaciones \pkg{shiny} para apoyar los procesos de aprendizaje de pruebas de hipótesis (título tentativo a mejorar),
-       secondtitle = Título en inglés
-       shorttitle = Título corto]       
+\title[maintitle = Aplicaciones \pkg{shiny} para apoyar los procesos de aprendizaje de pruebas de hip?tesis (t?tulo tentativo a mejorar),
+       secondtitle = T?tulo en ingl?s
+       shorttitle = T?tulo corto]       
 
 \begin{authors}
 \author[firstname = Freddy,
-surname = Hernández Barajas,
+surname = Hern?ndez Barajas,
 %numberinstitution = 1,
 affiliation = {Profesor asistente, Universidad Nacional de Colombia, Sede Medell\'in.},
 email = fhernanb@unal.edu.co]
@@ -26,143 +26,145 @@ surname = Usuga Manco,
 affiliation = {Profesora asociada, Universidad de Antioquia, Medell\'in.},
 email = olga.usuga@udea.edu.co]
 \author[firstname = Santiago Humberto,
-surname = Londoño Restrepo,
+surname = Londo?o Restrepo,
 %numberinstitution = 2,
-affiliation = {Profesor de Ingenier\'ia , Corporaci\'on Universitaria Americana.},
+affiliation = {Profesor de Planta, Corporaci\'on Universitaria Americana.},
 email = slondono@coruniamericana.edu.co]
 \end{authors}
 
 \begin{mainabstract}
-Resumen del artículo.
+Resumen del art?culo.
 \textcolor{red}{A cargo de Olga y Freddy.}
 \keywords{Palabras claves}
 \end{mainabstract}
 
 \begin{secondaryabstract}
-Resumen en inglés.
+Resumen en ingl?s.
 \textcolor{red}{A cargo de Olga y Freddy.}
-\keywords{Palabras claves en inglés}
+\keywords{Palabras claves en ingl?s}
 \end{secondaryabstract}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Introducción}
+\section{Introducci?n}
 \textcolor{red}{A cargo de Olga.}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Pruebas de hipótesis}
+\section{Pruebas de hip?tesis}
 Bla bla bla.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Prueba de hipótesis para la varianza}
-Suponga que se tiene una muestra aleatoria $x_1, x_2, \ldots, x_n$ proveniente de una población normal. Se desea estudiar la hipótesis nula $H_0: \sigma^2 = \sigma_0^2$ y se sospecha que la varianza $\sigma^2$ podría estar en alguna de las siguientes situaciones (hipótesis alterna):
+\subsection{Prueba de hip?tesis para la varianza}
+Suponga que se tiene una muestra aleatoria $x_1, x_2, \ldots, x_n$ proveniente de una poblaci?n normal. Se desea estudiar la hip?tesis nula $H_0: \sigma^2 = \sigma_0^2$ y se sospecha que la varianza $\sigma^2$ podr?a estar en alguna de las siguientes situaciones (hip?tesis alterna):
 \begin{enumerate}[noitemsep, nolistsep]
 	\item $H_1: \sigma^2 < \sigma_0^2$
 	\item $H_1: \sigma^2 \neq \sigma_0^2$
 	\item $H_1: \sigma^2 > \sigma_0^2$
 \end{enumerate}
-El estadístico para realizar la prueba es:
+El estad?stico para realizar la prueba es:
 $$\chi_0^2=\frac{(n-1) s^2}{\sigma_0^2},$$
-donde $s$ desviación estándar muestral. Bajo la suposición de que $H_0$ es verdadera, $\chi_0^2$ tiene distribución $\chi^2$ con $n-1$ grados de libertad \cite{Montgomery03}.
+donde $s$ desviaci?n est?ndar muestral. Bajo la suposici?n de que $H_0$ es verdadera, $\chi_0^2$ tiene distribuci?n $\chi^2$ con $n-1$ grados de libertad \cite{Montgomery03}.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Prueba de hipótesis para la media}
-Suponga que se tiene una muestra aleatoria $x_1, x_2, \ldots, x_n$ proveniente de una población normal. Se quiere estudiar la hipótesis nula $H_0: \mu = \mu_0$ y se sospecha que la media $\mu$ podría estar en alguna de las siguientes situaciones (hipótesis alterna):
+\subsection{Prueba de hip?tesis para la media}
+Suponga que se tiene una muestra aleatoria $x_1, x_2, \ldots, x_n$ proveniente de una poblaci?n normal. Se quiere estudiar la hip?tesis nula $H_0: \mu = \mu_0$ y se sospecha que la media $\mu$ podr?a estar en alguna de las siguientes situaciones (hip?tesis alterna):
 \begin{enumerate}[noitemsep, nolistsep]
 	 \item $H_1: \mu < \mu_0$
 	 \item $H_1: \mu \neq \mu_0$
 	 \item $H_1: \mu > \mu_0$
 \end{enumerate}
-El estadístico para realizar la prueba es:
+El estad?stico para realizar la prueba es:
 $$t_0=\frac{\bar{x} - \mu_0}{s/\sqrt{n}},$$
-donde $\bar{x}$ y $s$ son la media y desviación estándar muestrales respectivamente. Bajo la suposición de que $H_0$ es verdadera, el estadístico $t_0$ tiene distribución $t$-student con $n-1$ grados de libertad \cite{Walpole12}.
+donde $\bar{x}$ y $s$ son la media y desviaci?n est?ndar muestrales respectivamente. Bajo la suposici?n de que $H_0$ es verdadera, el estad?stico $t_0$ tiene distribuci?n $t$-student con $n-1$ grados de libertad \cite{Walpole12}.
 
-Si se dá el caso en que la muestra aleatoria no proviene de una población normal pero se cumple que $n \geq 40$, entonces en virtud del Teorema del Límite Central, el estadístico para realizar la prueba es:
+Si se d? el caso en que la muestra aleatoria no proviene de una poblaci?n normal pero se cumple que $n \geq 40$, entonces en virtud del Teorema del L?mite Central, el estad?stico para realizar la prueba es:
 $$z_0=\frac{\bar{x} - \mu_0}{s/\sqrt{n}},$$
-y en esta situación el estadístico $z_0$ tiene una distribución $N(0, 1)$. 
+y en esta situaci?n el estad?stico $z_0$ tiene una distribuci?n $N(0, 1)$. 
 
-En cualquiera de los casos, la hipótesis nula $H_0$ se rechaza si el valor-P es menor que el nivel de significancia fijado previamente por el analista.
+En cualquiera de los casos, la hip?tesis nula $H_0$ se rechaza si el valor-P es menor que el nivel de significancia fijado previamente por el analista.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Prueba de hipótesis para la proporcion}
+\subsection{Prueba de hip?tesis para la proporcion}
 \textcolor{red}{A cargo de Olga.}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Prueba de hipótesis para el cociente de varianzas}\label{phvars}
-Suponga que se tienen dos muestras aleatorias que provienen de poblaciones normales así:
+\subsection{Prueba de hip?tesis para el cociente de varianzas}\label{phvars}
+Suponga que se tienen dos muestras aleatorias que provienen de poblaciones normales as?:
 \begin{itemize}[noitemsep, nolistsep]
-	\item $n_1$ observaciones $x_{11}, x_{12}, \ldots, x_{1,n1}$ de una población I con  varianza $\sigma^2_1$, 
-	\item $n_2$ observaciones $x_{21}, x_{22}, \ldots, x_{2,n2}$ de una población II con varianza $\sigma^2_2$,
-	\item ambas muestras son independientes entre sí.
+	\item $n_1$ observaciones $x_{11}, x_{12}, \ldots, x_{1,n1}$ de una poblaci?n I con  varianza $\sigma^2_1$, 
+	\item $n_2$ observaciones $x_{21}, x_{22}, \ldots, x_{2,n2}$ de una poblaci?n II con varianza $\sigma^2_2$,
+	\item ambas muestras son independientes entre s?.
 \end{itemize}
-Se quiere estudiar la hipótesis nula $H_0: \sigma_1^2 / \sigma_2^2 = 1$ y se sospecha que el cociente de varianzas $\sigma_1^2 / \sigma_2^2$ podría estar en alguna de las siguientes situaciones (hipótesis alterna):
+Se quiere estudiar la hip?tesis nula $H_0: \sigma_1^2 / \sigma_2^2 = 1$ y se sospecha que el cociente de varianzas $\sigma_1^2 / \sigma_2^2$ podr?a estar en alguna de las siguientes situaciones (hip?tesis alterna):
 \begin{enumerate}[noitemsep, nolistsep]
 	\item $H_1: \sigma_1^2 / \sigma_2^2 < 1$
 	\item $H_1: \sigma_1^2 / \sigma_2^2 \neq 1$
 	\item $H_1: \sigma_1^2 / \sigma_2^2 > 1$
 \end{enumerate}
-El estadístico para realizar la prueba es:
+El estad?stico para realizar la prueba es:
 $$f_0=\frac{s_1^2}{s_1^2},$$
 
-donde $s_1^2$ y $s_2^2$ son las varianzas muestrales de las poblaciones I y II respectivamente. El estadístico $f_0$, bajo la suposición de que $H_0$ es verdadera, tiene distribución $f$ con $n_1-1$ grados de libertad en el numerador y $n_2-1$ grados de libertad en el denominador \cite{Devore16}.
+donde $s_1^2$ y $s_2^2$ son las varianzas muestrales de las poblaciones I y II respectivamente. El estad?stico $f_0$, bajo la suposici?n de que $H_0$ es verdadera, tiene distribuci?n $f$ con $n_1-1$ grados de libertad en el numerador y $n_2-1$ grados de libertad en el denominador \cite{Devore16}.
 
-En esta prueba, al no rechazar la hipótesis nula $H_0$, se concluye que $\sigma_1^2 / \sigma_2^2 = 1$ lo que implica en términos prácticos que $\sigma_1^2 = \sigma_2^2$, es decir que las varianzas poblacionales se pueden considerar iguales.
+En esta prueba, al no rechazar la hip?tesis nula $H_0$, se concluye que $\sigma_1^2 / \sigma_2^2 = 1$ lo que implica en t?rminos pr?cticos que $\sigma_1^2 = \sigma_2^2$, es decir que las varianzas poblacionales se pueden considerar iguales.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Prueba de hipótesis para la diferencia de medias}
-Suponga que se tienen dos muestras aleatorias que provienen de poblaciones normales así:
+\subsection{Prueba de hip?tesis para la diferencia de medias}
+Suponga que se tienen dos muestras aleatorias que provienen de poblaciones normales as?:
 \begin{itemize}[noitemsep, nolistsep]
-	\item $n_1$ observaciones $x_{11}, x_{12}, \ldots, x_{1,n1}$ de una población I con media $\mu_1$ y varianza $\sigma^2_1$,
-	\item $n_2$ observaciones $x_{21}, x_{22}, \ldots, x_{2,n2}$ de una población II con media $\mu_2$ y varianza $\sigma^2_2$,
-	\item ambas muestras son independientes entre sí.
+	\item $n_1$ observaciones $x_{11}, x_{12}, \ldots, x_{1,n1}$ de una poblaci?n I con media $\mu_1$ y varianza $\sigma^2_1$,
+	\item $n_2$ observaciones $x_{21}, x_{22}, \ldots, x_{2,n2}$ de una poblaci?n II con media $\mu_2$ y varianza $\sigma^2_2$,
+	\item ambas muestras son independientes entre s?.
 \end{itemize}
-Se quiere estudiar la hipótesis nula $H_0: \mu_1 - \mu_2 = \delta_0$ y se sospecha que la diferencia de medias $\mu_1 - \mu_2$ podría estar en alguna de las siguientes situaciones (hipótesis alterna):
+Se quiere estudiar la hip?tesis nula $H_0: \mu_1 - \mu_2 = \delta_0$ y se sospecha que la diferencia de medias $\mu_1 - \mu_2$ podr?a estar en alguna de las siguientes situaciones (hip?tesis alterna):
 \begin{enumerate}[noitemsep, nolistsep]
 	\item $H_1: \mu_1 - \mu_2 < \delta_0$
 	\item $H_1: \mu_1 - \mu_2 \neq \delta_0$
 	\item $H_1: \mu_1 - \mu_2 > \delta_0$
 \end{enumerate}
-Para realizar esta prueba de hipótesis se deben diferenciar dos casos, uno en el que las varianzas son iguales y otro caso en el que las varianzas son diferentes, esto se puede chequear utilizando la prueba descrita en la sección \ref{phvars} del presente artículo. Para cada uno de los casos descritos hay un estadístico de prueba y una distribución del estadístico, a continuación se presentan los dos casos en detalle.
+Para realizar esta prueba de hip?tesis se deben diferenciar dos casos, uno en el que las varianzas son iguales y otro caso en el que las varianzas son diferentes, esto se puede chequear utilizando la prueba descrita en la secci?n \ref{phvars} del presente art?culo. Para cada uno de los casos descritos hay un estad?stico de prueba y una distribuci?n del estad?stico, a continuaci?n se presentan los dos casos en detalle.
 \subsubsection{Caso 1: varianzas poblacionales iguales $\sigma_1^2 = \sigma_2^2$}
-En este caso el estadístico para realizar la prueba es:
+En este caso el estad?stico para realizar la prueba es:
 $$t_0=\frac{\bar{x}_1 - \bar{x}_2 - \delta_0}{S_p \sqrt{\frac{1}{n_1} + \frac{1}{n_2}}},$$
 donde $\bar{x}_1$ y $\bar{x}_2$ son las medias muestrales de las poblaciones I y II respectivamente, la cantidad $S_p^2$ es una varianza combinada y se calcula como:
 $$S_p^2=\frac{(n_1-1)s_1^2+(n_2-1)s_2^2}{n_1+n_2-2},$$
 donde $s_1^2$ y $s_2^2$ son las varianzas muestrales de las poblaciones I y II respectivamente.
 
-En este caso el estadístico $t_0$, bajo la suposición de que $H_0$ es verdadera, tiene distribución $t$-student con $n_1+n_2-2$ grados de libertad \cite{Walpole12}.
+En este caso el estad?stico $t_0$, bajo la suposici?n de que $H_0$ es verdadera, tiene distribuci?n $t$-student con $n_1+n_2-2$ grados de libertad \cite{Walpole12}.
 
 \subsubsection{Caso 2: varianzas poblacionales diferentes $\sigma_1^2 \neq \sigma_2^2$}
-En este caso el estadístico para realizar la prueba es 
+En este caso el estad?stico para realizar la prueba es 
 $$t_0=\frac{\bar{x}_1 - \bar{x}_2 - \delta_0}{\sqrt{\frac{s_1^2}{n_1} + \frac{s_2^2}{n_2}}}$$
-En este caso el estadístico $t_0$, bajo la suposición de que $H_0$ es verdadera, tiene distribución $t$-student con $v$ grados de libertad \cite{Walpole12}, en donde $v$ se calcula como:
+En este caso el estad?stico $t_0$, bajo la suposici?n de que $H_0$ es verdadera, tiene distribuci?n $t$-student con $v$ grados de libertad \cite{Walpole12}, en donde $v$ se calcula como:
 $$v=\frac{ \left( \frac{s_1^2}{n_1} + \frac{s_2^2}{n_2} \right)^2 }{ \frac{(s_1^2/n_1)^2}{n_1-1} + \frac{(s_2^2/n_2)^2}{n_2-1}}$$
 
 %%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Prueba de hipótesis para la diferencia de proporciones}
+\subsection{Prueba de hip?tesis para la diferencia de proporciones}
 \textcolor{orange}{A cargo de Olga.}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Paquete \pkg{shiny}}
 \textcolor{red}{A cargo de Santiago.}
 
-La idea es que aquí se hable de los orígenes del paquete shiny, las partes de una aplicación y otras generalidades. La idea es que el lector tenga un panorama muy general de una aplicación, no que aprenda a construir una.
+Shiny es un paquete del software de c?digo abierto conocido como R. Hace que sea posible crear f?cilmente aplicaciones o aplicativos web interactivos sin requerir conocimientos de HTML, CSS o JavaScript, sÃ³lo necesitas saber R. Creado por \cite{Winston17} y mejorado con la ayuda de m?ltiples colaboradores como Mark Otto, Scott Jehl entre otros. Para mayor informaci?n visitar https://cran.r-project.org/web/packages/shiny/index.html
 
-Se puede aquí referenciar la página de shiny en la cual se muestran tutoriales y la galeria:
+Un aplicativo web interactivo hoy en d?a es algo m?s com?n de lo imaginado, especialmente para aquellos que usan internet como su herramienta aliada en el trabajo, estudio o comunicaci?n. Es muy probable que usted use almenos uno al d?a sin que se de cuenta de que eso, que le facilita la vida, es un aplicativo web. Por ejemplo los correos electr?nicos, wikipedia, las tiendas online, los blogs, youtube y facebook son algunos de ellos, Â¿los ha usado? Lo m?s seguro es que s?.
 
-https://shiny.rstudio.com/tutorial/
+Ellos comparten tres caracterÃ­sticas en comÃºn. La primera, se utilizan por medio de internet, cualquier persona con conexi?n puede hacer uso de ellos, algunos no son gratuitos as? que no es suficiente con tener internet. Segunda, el usuario se encarga de administrar la entrada (input), es decir el usuario es qui?n decide que hacer con el aplicativo, por ejemplo si usted desea observar videos en youtube sobre su cantante favorito usted es qui?n digita sobre el caj?n de texto (caj?n de b?squeda) el nombre del cantante. Tercera, el aplicativo se encarga de la salida (outputs), es decir el aplicativo ejecuta de forma automÃ¡tica la entrada (input) suministrada por el usuario inicialmente y arroja un resultado que coincida con dicha entrada. Siguiendo nuestro ejemplo de youtube, al usted ingresar el nombre del cantante y luego de dar clic en el bot?n de buscar (bot?n con lupa) o luego de oprimir el bot?n enter, youtube (el aplicativo) se encarga de buscar autom?ticamente, todos los videos asociados al cantante, y adem?s de mostrar de forma ordenada en la pantalla de su computadora o t?lefono m?vil la gran cantidad de videos que se puedan presentar. Notar que el aplicativo hace el trabajo duro: buscar miles de videos entre millones que coincidan con los deseos del usuario y mostrarlos de forma agradable, Wow un milagro.
 
-https://shiny.rstudio.com/gallery/
+Shiny permite al desarrollador de aplicativos web interactivos integrar esas tres caracterÃ­sticas sin mayor esfuerzo. Shiny proporciona una gran variedad de formas en c?mo el usuario puede administrar las entradas y proporciona diversar maneras de expresar las salidas sin necesidad de que el desarrollador tenga conocimiento del c?digo fuente que crea dichas entradas y salidas. SÃ³lo se debe preocupar por aspectos como la forma del aplicativo y cÃ³mo debe reaccionar automÃ¡ticamente la salida (output) ante los valores proporcionados en la entrada (input). Ahora si la preocupac?n es cÃ³mo almacenar en la web o en internet el apliactivo creado, esta no tiene fundamento pues shiny proporciona diversas formas de alojamiento en servidores. De esta manera, es posible crear aplicaciones hermosas, receptivas y potentes con sÃ³lo tener conocimiento del lenguaje R.
+
+Un aplicativo web creado a trav?s del paquete shiny esta conformado por dos archivos: archivo ui.R y archivo server.R. En el archivo ui.R se escribe el c?digo que se encargar? de la forma del aplicativo web, el desarrollador se encargar? de definir en que lugar ir?n los botones donde el usuario suministrar? las entradas (inputs) y el lugar de donde se expresaran las salidas (outputs). En este archivo tambi?n se programan aspectos de estilo del aplicativo como tamaÃ±o, color y forma del texto. Finalmente, en el archivo server.R se escribe el c?digo que se encargar? de la reacci?n autom?tica en la salida (output) que se mostrar? cuando se modifican las entradadas (inputs).
+
+InformaciÃ³n sobre c?mo construir desde cero un aplicativo web interactivo utilizando shiny ir a https://shiny.rstudio.com/tutorial/ y para interactuar con algunas aplicaciones terminadas que van desde las m?s simple hasta las m?s sofisticadas ver https://shiny.rstudio.com/gallery/.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Aplicaciones \pkg{shiny} creadas}
 \textcolor{red}{A cargo de Santiago.}
 
-En esta sección se debe explicar el sitio donde están disponibles las aplicaciones, se podría colocar una imagen de una de las aplicaciones y explicar con detalle todas las partes y los cuidados que se deben tener. Podría ser una de las app de dos poblaciones, varianzas o medias.
+En esta secci?n se debe explicar el sitio donde est?n disponibles las aplicaciones, se podr?a colocar una imagen de una de las aplicaciones y explicar con detalle todas las partes y los cuidados que se deben tener. Podr?a ser una de las app de dos poblaciones, varianzas o medias.
 
-Se debe explicar que la aplicación puede recibir varios tipos de bases de datos (.csv, con espacios, etc).
-
-
+Se debe explicar que la aplicaci?n puede recibir varios tipos de bases de datos (.csv, con espacios, etc).
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Material de apoyo para los docentes}
@@ -177,7 +179,7 @@ Se debe explicar que la aplicación puede recibir varios tipos de bases de datos 
 \textbf{Aceptado: }
 \end{flushright}
 
-% Para la lista de referencias bibliográficas, debe crear un archivo de extension bibtex y usar la siguiente línea
+% Para la lista de referencias bibliogr?ficas, debe crear un archivo de extension bibtex y usar la siguiente l?nea
 \nocite{*}
 \references{Bibliografia}
 
