@@ -162,9 +162,45 @@ Información sobre c?mo construir desde cero un aplicativo web interactivo utili
 \section{Aplicaciones \pkg{shiny} creadas}
 \textcolor{red}{A cargo de Santiago.}
 
-En esta secci?n se debe explicar el sitio donde est?n disponibles las aplicaciones, se podr?a colocar una imagen de una de las aplicaciones y explicar con detalle todas las partes y los cuidados que se deben tener. Podr?a ser una de las app de dos poblaciones, varianzas o medias.
+Se crearon 6 aplicativos web interactivos con el paquete shiny para determinar las siguientes pruebas de hipótesis de los siguientes parámetros: 1. Varianza, 2. Media, 3. Cociente de Varianzas, 4. Diferencia de medias, 5 Proporción y 6. Diferencia de Proporciones. En el enlace: http://ciencias.medellin.unal.edu.co/escuelas/estadistica/herramientas.html usted puede acceder y usar los seis aplicativos. En el enlace hay diversos aplicativos sobre distribuciones y conceptos de estadística, usted debe elegir los relacionados a pruebas de hipótesis.
 
-Se debe explicar que la aplicaci?n puede recibir varios tipos de bases de datos (.csv, con espacios, etc).
+Si usted, por ejemplo,  necesita aplicar una prueba de hipótesis sobre la varianza poblacional, ingrese al anterior enlace y dé clic sobre el link 1. PH para σ^2. En la figura X1 se muestra la apariencia completa del aplicativo. Notar que está estructurado por tres partes fundamentales: el título del aplicativo (parte superior izquierda), panel lateral (sidebar panel, panel sombreado con color gris) y panel principal (main panel).
+
+AQUÍ VA FIGURA X1
+
+En el panel lateral se encuentran los botones (elementos de entrada o inputs) que permitirán al usuario decidir qué hacer con el aplicativo. Las entradas (inputs) que el usuario puede administrar se encuentran en el siguiente orden:
+
+1.	Botón Browse, permite ingresar una base de datos (debe ser un archivo almacenado en su computadora) con las variables de interés o análisis. Los creadores del aplicativo han decidido que cuando el usuario abra el aplicativo, este observé salidas (outputs) o resultados en el panel principal. Esto implica que hay una base de datos cargada de forma predeterminada.
+
+2.	Casilla de verificación única (single checkbox), permite “comunicar al aplicativo” si en la base de datos ingresada la primera fila tiene el nombre de las variables, en caso afirmativo dar click sobre la casilla de tal forma que aparezca con relleno (de forma predeterminada la casilla esta con relleno). En caso contrario, dar click en la casilla de tal forma que desaparezca el relleno.
+
+3.	Caja de selección (select box) permite al usuario definir el tipo de base de datos que ingresó. Los tipos que admite el aplicativo son:.csv (valores separdos por coma o por punto y coma) y .tsv(valores separados por tabulación).
+
+4.	Caja de selección (select box) permite elegir la variable sobre la cual se desea aplicar la prueba de hipótesis de la varianza poblacional.
+
+5.	Cajón entrada numérica (numeric input) permite definir el valor de la varianza poblacional en la hipótesis nula.
+
+6.	Caja de selección (select box) permite definir el tipo de prueba de hipótesis. El usuario puede elegir entre una prueba de hipótesis de dos colas o una cola (hacia la más alta o hacia la más baja).
+
+7.	Deslizador (slider) permite definir el nivel de significancia de la prueba. Tener en cuenta que el nivel de significancia ha sido expresado de tal forma que permita crear un intervalo de confianza. Es decir si el usuario desea un nivel de significancia igual a 0.01, debe posicionar el deslizador en el valor 0.9. De forma predeterminada, el aplicativo inicia con un nivel de significancia igual a 0.05 (el deslizador está posicionado en 0.95).
+
+En la figura X2 se expone los valores de entrada (inputs) seleccionados de forma predeterminada en el panel lateral que el usuario observará cuando abre el aplicativo:
+
+IMAGEN X2
+
+En el panel principal el usuario observará las salidas (inputs) producto de las entradas suministradas en el panel lateral. Está estructurado en tres pestañas que el usuario puede elegir con solo dar clic: Resultados, Base de datos y Teoría. De forma predeterminada esta seleccionada la pestaña Resultados.
+
+La pestaña Resultados se encuentra un histograma y un gráfico Q-Q sobre la variable seleccionada que sirven para validar el supuesto de normalidad. Es importante recordar que estos gráficos cambian o se actualizan si el usuario elige otra variable (en el panel lateral elija la variable batch_number y notará el cambio automático). Debajo de los gráficos se presenta una tabla con los principales elementos de la prueba de hipótesis: Varianza Muestral, Estadístico de Prueba, Nivel de Significancia, Grados de Libertad, Valor P, Región Crítica de Rechazo, Intervalo de Confianza y Conclusión de la prueba basada tanto con el Valor P como con la Región de Crítica de Rechazo.
+
+La base de datos cargada de forma predeterminada o la base de datos que el usuario decida administrar se verá en la pestaña Base de datos. Y la teoría asociada a la prueba de hipótesis que el aplicativo se encarga de aplicar se encuentra en la pestaña Teoría.
+La figura X3 muestra la salida (output) en la pestaña Resultados que el usuario observará en el panel principal cuando el usuario abre el aplicativo. Tener en cuenta que esos resultados están en función de las entradas (inputs) seleccionadas en el panel lateral.
+
+AQUÍ VA FIGURA X3
+
+Se invita al lector a que modifique libremente las entradas (inputs) en el panel lateral o que incluya su propia base de datos para que observé los cambios y cálculos automáticos que realiza el aplicativo.
+
+Tener cuidado con lo siguiente: los cambios o actualizaciones que aparecen en el panel principal dependen de los valores ingresados en el panel lateral, en caso de que no se suministre un valor entonces el aplicativo mostrará un mensaje de error. Esto sólo sucederá si se borra el valor que se encuentra en el cajón de entrada numérica. Se alienta al lentor a que borre dicho valor y note que la tabla con los elementos de la prueba de hipótesis en la pestaña Resultados, y en su lugar surge un mensaje de error: Error: missing value where TRUE/FALSE needed. Para evitarlo no olvide ingresar un valor.
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Material de apoyo para los docentes}
